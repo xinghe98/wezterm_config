@@ -36,10 +36,10 @@ local keys = {
   { key = "w",   mods = mod.SUPER_REV, action = act.CloseCurrentTab({ confirm = false }) },
 
   -- tabs: navigation
-  { key = "n",   mods = mod.SUPER,     action = act.ActivateTabRelative(-1) },
-  { key = "i",   mods = mod.SUPER,     action = act.ActivateTabRelative(1) },
-  { key = "n",   mods = "ALT|SHIFT",   action = act.MoveTabRelative(-1) },
-  { key = "i",   mods = "ALT|SHIFT",   action = act.MoveTabRelative(1) },
+  { key = "[",   mods = mod.SUPER,     action = act.ActivateTabRelative(-1) },
+  { key = "]",   mods = mod.SUPER,     action = act.ActivateTabRelative(1) },
+  { key = "[",   mods = "ALT|SHIFT",   action = act.MoveTabRelative(-1) },
+  { key = "]",   mods = "ALT|SHIFT",   action = act.MoveTabRelative(1) },
 
 
   -- panes --
