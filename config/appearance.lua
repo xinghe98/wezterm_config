@@ -6,7 +6,8 @@ return {
   term = "xterm-256color",
   animation_fps = 60,
   max_fps = 60,
-  front_end = "WebGpu",
+  enable_wayland = false,
+  front_end = "OpenGL",
   webgpu_power_preference = "HighPerformance",
 
   -- color scheme
