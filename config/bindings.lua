@@ -36,14 +36,11 @@ local keys = {
   { key = "w",   mods = mod.SUPER_REV, action = act.CloseCurrentTab({ confirm = false }) },
 
   -- tabs: navigation
-  { key = "[",   mods = mod.SUPER,     action = act.ActivateTabRelative(-1) },
-  { key = "]",   mods = mod.SUPER,     action = act.ActivateTabRelative(1) },
-  { key = "[",   mods = mod.SUPER_REV, action = act.MoveTabRelative(-1) },
-  { key = "]",   mods = mod.SUPER_REV, action = act.MoveTabRelative(1) },
+  { key = "n",   mods = mod.SUPER,     action = act.ActivateTabRelative(-1) },
+  { key = "i",   mods = mod.SUPER,     action = act.ActivateTabRelative(1) },
+  { key = "n",   mods = "ALT|SHIFT",   action = act.MoveTabRelative(-1) },
+  { key = "i",   mods = "ALT|SHIFT",   action = act.MoveTabRelative(1) },
 
-  -- window --
-  -- spawn windows
-  { key = "n",   mods = mod.SUPER,     action = act.SpawnWindow },
 
   -- panes --
   -- panes: split panes
@@ -64,26 +61,26 @@ local keys = {
   },
 
   -- panes: zoom+close pane
-  { key = "z",          mods = mod.SUPER_REV, action = act.TogglePaneZoomState },
-  { key = "w",          mods = mod.SUPER,     action = act.CloseCurrentPane({ confirm = false }) },
+  { key = "z",         mods = mod.SUPER_REV, action = act.TogglePaneZoomState },
+  { key = "w",         mods = mod.SUPER,     action = act.CloseCurrentPane({ confirm = false }) },
 
   -- panes: navigation
-  { key = "u",          mods = mod.SUPER_REV, action = act.ActivatePaneDirection("Up") },
-  { key = "e",          mods = mod.SUPER_REV, action = act.ActivatePaneDirection("Down") },
-  { key = "n",          mods = mod.SUPER_REV, action = act.ActivatePaneDirection("Left") },
-  { key = "i",          mods = mod.SUPER_REV, action = act.ActivatePaneDirection("Right") },
+  { key = "u",         mods = mod.SUPER,     action = act.ActivatePaneDirection("Up") },
+  { key = "e",         mods = mod.SUPER,     action = act.ActivatePaneDirection("Down") },
+  { key = "n",         mods = mod.SUPER,     action = act.ActivatePaneDirection("Left") },
+  { key = "i",         mods = mod.SUPER,     action = act.ActivatePaneDirection("Right") },
 
   -- panes: resize
-  { key = "UpArrow",    mods = mod.SUPER_REV, action = act.AdjustPaneSize({ "Up", 1 }) },
-  { key = "DownArrow",  mods = mod.SUPER_REV, action = act.AdjustPaneSize({ "Down", 1 }) },
-  { key = "LeftArrow",  mods = mod.SUPER_REV, action = act.AdjustPaneSize({ "Left", 1 }) },
-  { key = "RightArrow", mods = mod.SUPER_REV, action = act.AdjustPaneSize({ "Right", 1 }) },
+  { key = "u",         mods = mod.SUPER_REV, action = act.AdjustPaneSize({ "Up", 1 }) },
+  { key = "e",         mods = mod.SUPER_REV, action = act.AdjustPaneSize({ "Down", 1 }) },
+  { key = "n",         mods = mod.SUPER_REV, action = act.AdjustPaneSize({ "Left", 1 }) },
+  { key = "i",         mods = mod.SUPER_REV, action = act.AdjustPaneSize({ "Right", 1 }) },
 
   -- fonts --
   -- fonts: resize
-  { key = "UpArrow",    mods = mod.SUPER,     action = act.IncreaseFontSize },
-  { key = "DownArrow",  mods = mod.SUPER,     action = act.DecreaseFontSize },
-  { key = "r",          mods = mod.SUPER,     action = act.ResetFontSize },
+  { key = "UpArrow",   mods = mod.SUPER,     action = act.IncreaseFontSize },
+  { key = "DownArrow", mods = mod.SUPER,     action = act.DecreaseFontSize },
+  { key = "r",         mods = mod.SUPER,     action = act.ResetFontSize },
 
   -- key-tables --
   -- resizes fonts

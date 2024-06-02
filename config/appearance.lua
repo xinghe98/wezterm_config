@@ -15,7 +15,7 @@ return {
   color_scheme = "Gruvbox dark, medium (base16)",
 
   -- background
-  window_background_opacity = 1.00,
+  --[[ window_background_opacity = 1.00,
   win32_system_backdrop = "Acrylic",
   window_background_gradient = {
     colors = { "#1D261B", "#261A25" },
@@ -32,7 +32,7 @@ return {
       width = "100%",
       opacity = 0.95,
     },
-  },
+  }, ]]
 
   -- scrollbar
   enable_scroll_bar = true,
